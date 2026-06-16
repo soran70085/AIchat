@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat - OpenAI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>🤖 AI Chat</h1>
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <button class="new-chat-btn" id="newChatBtn">➕ 新しいチャット</button>
+                <div class="chat-history" id="chatHistory"></div>
+            </aside>
+
+            <div class="chat-area">
+                <div class="messages" id="messages"></div>
+
+                <div class="input-area">
+                    <form id="chatForm" class="chat-form">
+                        <textarea 
+                            id="userInput" 
+                            placeholder="メッセージを入力..." 
+                            rows="1"
+                            required
+                        ></textarea>
+                        <button type="submit" id="sendBtn" class="send-btn">送信</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
